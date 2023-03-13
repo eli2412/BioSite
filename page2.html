@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Mynerve&display=swap" rel="stylesheet">
+    <title>Events</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/mysite.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        #course-matrix-table {border-collapse: collapse;}
+        #course-matrix-table,th,td {border: 3px solid black;}
+        #course-matrix-table th {color: rgb(9, 9, 9); background-color: #776f6f;}
+        #course-matrix-table tr:first-child {background: #CCC;}
+        #course-matrix-table td:nth-child(1) {font-weight: bold;}
+    </style>
+    <style>
+        @keyframes blinker {50% {opacity: 0;}}
+        .blink_me_alarm {
+            animation: blinker 0s step-start infinite;
+            color: rgb(72, 53, 53);
+        }
+        .div1 {
+            width: 300px;
+            height: 25px;
+            border: 0px solid #c9c8ce;
+            transition: transform 1s;
+        }
+        .div1:hover {
+            width: 300px;
+            height: 25;
+            transform: rotate(360deg)
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg" style="background-color:rgb(152, 152, 152)">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="bio.HTML">Bio Page<span class="sr-only"></span></a>
+            <a>--</a>
+            <a class="nav-item nav-link" href="page2.html">Events Page</a>
+            <a>--</a>
+        <a id='view_socials'class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            View Socials
+          </a>
+          <div id='socials' class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a href="https://www.linkedin.com/in/eliascruz25/">LinkedIn</a></li>
+            <li><a href="https://github.com/eli2412">GitHub</a></li>
+            </div>
+        </nav>
+                <body>
+                    <script>
+                        window.addEventListener("load", function () { alert("More about me!!") })
+                    </script>
+                    <h1 id="info" align="center">Events</h1>
+                    <script>
+                        document.getElementById("info").addEventListener("click", function () { alert("Nara Park!! The deers were adorable!!") });
+                    </script>
+                    <div align="center">
+                        <h2>Below are some of my past events and as well as a couple videos from those events. Clicking
+                            title Events will show you
+                            my favorite place in Japan!
+                        </h2>
+                        <table width="80%" id="course-matrix-table">
+                            <tr align="center">
+                                <th width="66%">Event</th>
+                                <th width="20%">Date</th>
+                                <th width="30%">Location</th>
+                            </tr>
+                            <tr">
+                                <td align="left">First trip out of the state</td>
+                                <td align="center">2019</td>
+                                <td align="center">Las Vegas, NV</td>
+                                </tr>
+                                <tr">
+                                    <td align="left">First Solo Trip</td>
+                                    <td align="center">2019</td>
+                                    <td align="center">Tokyo, Osaka, Kyoto, JAPAN</td>
+                                    </tr>
+                                    <tr">
+                                        <td align="left">Won Powerlifting Meet</td>
+                                        <td align="center">2020</td>
+                                        <td align="center">Tucson, AZ</td>
+                                        </tr>
+                                        <tr">
+                                            <td align="left">DoBroCon: Fighting Game Tournament</td>
+                                            <td align="center">2018</td>
+                                            <td align="center">Peoria, AZ</td>
+                                            </tr>
+                                            <tr">
+                                                <td align="left">First Concert</td>
+                                                <td align="center">2022</td>
+                                                <td align="center">Phoenix, AZ</td>
+                                                </tr>
+                        </table>
+                    </div>
+                    <section class="container">
+                        <div class="vid">
+                            <video width="320" height="280" controls>
+                                <source src="media/pr_squat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <font face="Serif" color="#4d4040" size="4">
+                                <div class="div1">Powerlifting 505lb squat</div>
+                            </font>
+                        </div>
+                        <div class="vid">
+                            <video width="320" height="300" controls>
+                                <source src="media/japantrip.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <h4 class="blink_me_alarm">Kyoto, Japan</h4>
+                        </div>
+                        <br />
+                        <div class="vid">
+                            <audio controls preLoad="metadata" class="keshi">
+                                <source src="media/keshi_con.mp3" type="audio/mp3">
+                                your browser does not support the audio tag
+                            </audio>
+                            <h4>Keshi Concert</h4>
+                        </div>
+                    </section>
+                    </font>
+                    <h4 align="left">Page navigation</h4>
+                    <script>
+                        $(document).ready(function() {
+                            $('#socials').hide();
+                            $('#view_socials').on('click', function() {
+                                $('#socials').toggle(1000);
+                            })
+                        })
+                    </script>
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="bio.HTML">Previous</a>
+                              </li>
+                          <li class="page-item"><a class="page-link" href="bio.HTML">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                              2
+                              <span class="sr-only">(current)</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </nav>
+                </body>
+
+</html>

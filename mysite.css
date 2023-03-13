@@ -1,0 +1,63 @@
+body { margin-top: 20px; margin-left: 20px; background: rgb(124, 122, 122); }
+body {
+    background-image: url("lightgreyb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+td { color: #000000; font-family: Arial; font-weight: bold; font-size: 40px; margin: 0 0 32px;}
+th { color: #000000; font-family: Arial; font-weight: bold; font-size: 70px; margin: 0 0 32px;}
+h1 { color: #000000; font-family: 'Serif'; font-weight: bold; font-size: 80px; margin: 0 0 32px;}
+h2 { color: #070707; font-family: Serif; font-weight: bold; font-size: 70px; margin: 0 0 8px;}
+h3 { color: #000000; font-family: 'Serif'; font-weight: bold; font-size: 70px; margin: 0 0 8px;}
+h4 { color: #000000; font-family: Serif; font-weight: bold; font-size: 40px; margin: 0 0 8px;}
+li { color: #000000; font-family: 'Caveat', cursive; font-size: 40px; margin: 0 0 8px; }
+p { font-family: 'Caveat', cursive; font-size: 55px; margin: 32px 40px 24px;}
+a { font-family: 'Caveat'; color: rgb(7, 6, 6); font-size: 35px; text-transform: uppercase; text-align: center; text-decoration: none;  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.vid {
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+}
+.vid:hover {
+    background-color: rgb(203, 199, 199);
+    color: rgb(188, 183, 183);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.keshi {
+    margin-top: 50%;
+}
+.food:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.doggos:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.mee:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+/* .preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+} */
